@@ -2,7 +2,7 @@ package MusicalInstrumentShop.OtherStock;
 
 import MusicalInstrumentShop.AgeGroup;
 
-public class LearningMaterials {
+public abstract class LearningMaterials {
 
     protected AgeGroup ageGroup;
     protected double buyingPrice;
@@ -24,5 +24,9 @@ public class LearningMaterials {
 
     public AgeGroup getAgeGroup() {
         return this.ageGroup;
+    }
+
+    public double calculateMarkup(double sellingPrice, double buyingPrice){
+        return sellingPrice - buyingPrice;
     }
 }

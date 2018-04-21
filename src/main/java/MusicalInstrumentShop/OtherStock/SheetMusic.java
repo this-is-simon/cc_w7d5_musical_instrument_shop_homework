@@ -1,8 +1,9 @@
 package MusicalInstrumentShop.OtherStock;
 
 import MusicalInstrumentShop.AgeGroup;
+import MusicalInstrumentShop.ISell;
 
-public class SheetMusic extends LearningMaterials {
+public class SheetMusic extends LearningMaterials implements ISell {
 
     protected String title;
 

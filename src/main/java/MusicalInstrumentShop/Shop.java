@@ -14,4 +14,12 @@ public class Shop {
         return stock.size();
     }
 
+    public void addItemToStock(ISell item){
+        stock.add(item);
+    }
+
+    public void removeItemFromStock(ISell item){
+        stock.remove(item);
+    }
+
 }
