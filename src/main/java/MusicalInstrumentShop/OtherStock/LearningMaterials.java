@@ -5,8 +5,8 @@ import MusicalInstrumentShop.AgeGroup;
 public abstract class LearningMaterials {
 
     protected AgeGroup ageGroup;
-    protected double buyingPrice;
-    protected double sellingPrice;
+    private double buyingPrice;
+    private double sellingPrice;
 
     public LearningMaterials(AgeGroup agegroup, double buyingPrice, double sellingPrice){
         this.ageGroup = agegroup;
@@ -26,7 +26,7 @@ public abstract class LearningMaterials {
         return this.ageGroup;
     }
 
-    public double calculateMarkup(double sellingPrice, double buyingPrice){
+    public double calculateMarkup(double buyingPrice, double sellingPrice){
         return sellingPrice - buyingPrice;
     }
 }

@@ -32,4 +32,7 @@ public class Shop {
         return runningTotal;
     }
 
+    public ArrayList<ISell> getStock(){
+        return this.stock;
+    }
 }
