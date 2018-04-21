@@ -1,6 +1,8 @@
 package MusicalInstrumentShop.Instruments;
 
-public abstract class StringInstrument {
+import MusicalInstrumentShop.ISell;
+
+public abstract class StringInstrument implements ISell {
 
     protected InstrumentType type;
     protected int numberOfStrings;
@@ -30,6 +32,10 @@ public abstract class StringInstrument {
         String music = sound + "! I am making music.";
         System.out.println(music);
         return music;
+    }
+
+    public double calculateMarkup(double buyingPrice, double sellingPrice){
+        return sellingPrice - buyingPrice;
     }
 
 }
