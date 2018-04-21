@@ -1,8 +1,9 @@
 package MusicalInstrumentShop.OtherStock;
 
 import MusicalInstrumentShop.AgeGroup;
+import MusicalInstrumentShop.ISell;
 
-public class ChordBook extends LearningMaterials {
+public class ChordBook extends LearningMaterials implements ISell {
 
     private String title;
 
