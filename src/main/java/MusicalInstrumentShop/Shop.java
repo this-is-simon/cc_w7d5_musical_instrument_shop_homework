@@ -1,5 +1,8 @@
 package MusicalInstrumentShop;
 
+import sun.security.krb5.internal.Ticket;
+
+import javax.print.attribute.standard.Destination;
 import java.util.ArrayList;
 
 public class Shop {
@@ -20,6 +23,13 @@ public class Shop {
 
     public void removeItemFromStock(ISell item){
         stock.remove(item);
+    }
+
+    public double calculateShopTotalMarkup(ArrayList<ISell> stock){
+        double runningTotal = 0.0;
+        for(ISell item : stock) {
+            runningTotal += item.calculateMarkup(item.getBuyingPrice(),  item.getSellingPrice());}
+        return runningTotal;
     }
 
 }

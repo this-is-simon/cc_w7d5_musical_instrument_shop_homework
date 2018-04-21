@@ -4,10 +4,10 @@ import MusicalInstrumentShop.ISell;
 
 public abstract class StringInstrument implements ISell {
 
-    protected InstrumentType type;
-    protected int numberOfStrings;
-    protected double buyingPrice;
-    protected double sellingPrice;
+    private InstrumentType type;
+    private int numberOfStrings;
+    private double buyingPrice;
+    private double sellingPrice;
 
     public StringInstrument(InstrumentType type, int numberOfStrings, double buyingPrice, double sellingPrice){
         this.type = type;
